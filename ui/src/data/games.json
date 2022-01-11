@@ -1,0 +1,25 @@
+{
+    "games": [
+        {
+            "id": 254343,
+            "player1": "Louisa",
+            "player2": "Alex",
+            "score1": 6,
+            "score2": 5
+          },
+          {
+            "id": 354464,
+            "player1": "Guillaume",
+            "player2": "Loic",
+            "score1": 6,
+            "score2": 4
+          },
+          {
+            "id": 235346,
+            "player1": "Monica",
+            "player2": "Jamon",
+            "score1": 12,
+            "score2": 7
+          }
+    ]
+}

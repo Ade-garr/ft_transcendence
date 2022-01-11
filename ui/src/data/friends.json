@@ -1,0 +1,13 @@
+{
+  "friends": [
+    {   
+        "username": "Alex",
+        "id" : 2,
+        "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    },
+    {   "username": "Louisa",
+        "id" : 3,
+        "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    }
+  ]
+}

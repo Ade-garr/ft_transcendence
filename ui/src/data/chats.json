@@ -1,0 +1,19 @@
+{
+    "chats": [
+        {
+            "websocket": 254343,
+            "passwordRequired": true,
+            "name": "parlons de 42"
+        },
+        {
+            "websocket": 3453663,
+            "passwordRequired": false,
+            "name": "le poulet c'est trop genial"
+        },
+        {
+            "websocket": 254343,
+            "passwordRequired": true,
+            "name": "je mange mes doigts"
+        }
+    ]
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Nestjs SocketIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-3.0.5.js"></script>
+</head>
+<body>
+    <img src='data:image/png;base64,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'>
+    
+    <div id="app" class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-12">
+                    <h1 class="text-center">{{ title }}</h1>
+                    <br>
+                    <div id="status"></div>
+                    <div id="chat">
+                        <input type="text" v-model="name" id="username" class="form-control" placeholder="Enter name...">
+                        <br>
+                        <div class="card">
+                            <div id="messages" class="card-block">
+                                <ul>
+                                    <li v-for="message of messages">{{ message.name }}: {{ message.text }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <textarea id="textarea" class="form-control" v-model="text" placeholder="Enter message..."></textarea>
+                        <br>
+                        <button id="send" class="btn" @click.prevent="sendMessage">Send</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

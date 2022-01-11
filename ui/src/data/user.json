@@ -1,0 +1,62 @@
+{
+    "1": {
+        "username": "Guillaume",
+        "avatar": "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160",
+        "is_admin": true,
+        "id": 1,
+        "friends": [
+            {   
+                "username": "Alex",
+                "is_admin": true,
+                "id" : "2",
+                "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+            },
+            {   "username": "Louisa",
+                "id" : "3",
+                "is_admin": true,
+                "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+            }
+        ],
+        "blocked" : [
+            {   
+                "username": "Loic",
+                "id" : "4",
+                "is_admin": false,
+                "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+            },
+            {   "username": "Jacques",
+                "id" : "5",
+                "is_admin": false,
+                "avatar" : "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+            }
+        ],
+        "victories" : 20,
+        "loses" : 3,
+        "rank" : "boss"
+    },
+    "2" : {
+        "username": "Alex",
+        "id": "2",
+        "is_admin": true,
+        "avatar": "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    },
+    "4" : {
+        "username": "Loic",
+        "id": "4",
+        "is_admin": true,
+        "avatar": "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    },
+    "5" : {
+        "username": "Jacques",
+        "id": "5",
+        "is_admin": false,
+        "avatar": "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    },
+    "3" : {
+        "username": "Louisa",
+        "id": "3",
+        "is_admin": false,
+        "avatar": "https://images.prismic.io/fft-rg-site/58ff2d89-3f3d-4e85-859f-7c89d50e2581_RG_log_inst_cou_R.png?auto=compress,format&rect=0,0,1181,1181&w=160&h=160"
+    }
+
+}

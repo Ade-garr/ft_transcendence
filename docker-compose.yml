@@ -1,0 +1,71 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    container_name: postgres-db
+    hostname: postgres-db
+    env_file:
+      - ".env"
+    ports:
+    - '5432:5432'
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - db-network
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    ports:
+      - "8081:80"
+    volumes:
+      - ./pgadmin-data:/root/.pgadmin
+    env_file:
+      - docker.env
+    depends_on:
+      - db
+    networks:
+      - db-network
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: nestjs-api
+    hostname: nestjs-api
+    env_file:
+      - ".env"
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./api:/usr/src/app/api
+    depends_on:
+      - db
+    networks:
+      - db-network
+      - webapp-network
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    container_name: vue-ui
+    hostname: vue-ui
+    ports:
+      - '80:80'
+      - '443:443'
+      - '10000-10010:10000-10010'
+      - '8080:8080'
+    volumes:
+      - ./ui:/usr/src/app/ui
+    networks:
+      - webapp-network
+    restart: unless-stopped
+    depends_on:
+    - api
+networks:
+  db-network:
+    driver: bridge
+  webapp-network:
+    driver: bridge
+volumes:
+  pgadmin-data:
+  pgdata:

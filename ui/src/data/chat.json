@@ -1,0 +1,30 @@
+
+{
+    "id": 254343,
+    "name": "lolilol",
+    "admin": [
+        {   "username": "Louisa",
+            "id": 6532
+        },
+        {   "username": "Alex",
+            "id": 6532242
+        }
+    ],
+    "chatter": [
+        2, 3, 4
+    ],
+    "messages": [
+        {
+            "id": 6532,
+            "body": "Salut tout le monde" 
+        },
+        {
+            "id": 6532242,
+            "body": "Salut les pouilleux" 
+        },
+        {
+            "id": 123456,
+            "body": "Salut les loosers" 
+        }
+    ]
+}

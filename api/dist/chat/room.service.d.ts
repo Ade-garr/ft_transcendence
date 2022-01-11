@@ -1,0 +1,34 @@
+import { createRoomDTO } from './dto/createRoomDTO';
+import { MuteUserDTO } from './dto/MuteUserDTO';
+import { MuteService } from './mute.service';
+import { UserEntity } from 'src/user/entities/user.entity';
+import { JoinedRoomService } from './joined-room.service';
+import { UserService } from './../user/user.service';
+import { Repository } from "typeorm";
+import { RoomEntity } from "./entities/room.entity";
+import { RoomI } from "./interfaces/room.interface";
+import { UserI } from "src/user/interfaces/user.interface";
+export declare class RoomService {
+    private readonly roomRepository;
+    private readonly muteService;
+    private readonly userService;
+    private readonly joinedRoomService;
+    constructor(roomRepository: Repository<RoomEntity>, muteService: MuteService, userService: UserService, joinedRoomService: JoinedRoomService);
+    createRoom(createRoom: createRoomDTO, creator: UserI): Promise<RoomI>;
+    getRoom(roomId: number): Promise<RoomEntity>;
+    private validatePassword;
+    private verifyUser;
+    onJoinRoom(roomSent: RoomI, user: UserEntity): Promise<void>;
+    changePassword(room: RoomI): Promise<void>;
+    inviteToPrivateRoom(roomSent: RoomI, userId: number): Promise<void>;
+    getRoomsForUser(userId: number): Promise<RoomI[]>;
+    banUserFromRoom(userId: number, idToBan: number, roomSent: RoomI): Promise<void>;
+    unbanUserFromRoom(idToUnBan: number, roomId: number): Promise<void>;
+    onDeleteRoom(roomId: number): Promise<void>;
+    getRoomWithUser(roomId: number): Promise<RoomEntity>;
+    onUnjoinRoom(roomId: number, userId: number): Promise<void>;
+    save(room: RoomEntity): Promise<void>;
+    updateUserAdminStatus(userId: number, roomToUpdate: RoomEntity): Promise<void>;
+    onMuteUser(muteUser: MuteUserDTO, userId: number): Promise<void>;
+    getAllRooms(): Promise<RoomEntity[]>;
+}
