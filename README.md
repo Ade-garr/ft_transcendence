@@ -13,7 +13,7 @@ Made with [GuiDupont](https://github.com/GuiDupont) and [lmalki-h](https://githu
 
 ## 💡 Usage
 
-You need to have docker install on your system in order to run the docker-compose command.
+You need to have docker installed on your system in order to run the docker-compose command.
 
 ```
 docker-compose up --build
