@@ -1,6 +1,6 @@
-### Welcome to my ft_transcendence repository 👋
+# 📌 ft_transcendence 📌
 
-⭐️ The aim of this project is to build a website with a pong game, a chat system and an account system.<br>
+The aim of this project is to build a website with a pong game, a chat system and an account system.<br>
 The front-end is implemented in vue.js whereas the back-end is implemented with nestJS. The website is built with a PostgreSQL database.<br>
 
 <p align="center">
@@ -9,7 +9,7 @@ The front-end is implemented in vue.js whereas the back-end is implemented with 
 
 Made with [GuiDupont](https://github.com/GuiDupont) and [lmalki-h](https://github.com/lmalki-h/ft_transcendence).
 
-## 💡 Usage
+## 🔑 How to
 
 You need to have docker installed on your system in order to run the docker-compose command.
 
